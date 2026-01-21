@@ -35,3 +35,23 @@
     <script src="game.js"></script>
 </body>
 </html>
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #f0f0f0;
+    padding-top: 50px;
+}
+
+button {
+    font-size: 20px;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+let score = 0;
+const btn = document.getElementById("btn");
+const scoreText = document.getElementById("score");
+
+btn.addEventListener("click", () => {
+    score++;
+    scoreText.textContent = score;
+});
